@@ -58,7 +58,7 @@
   }
 
   .border-tb {
-    border-radius: 20px;
+    border-radius: 20px !important;
   }
 
   .card-header {
@@ -115,6 +115,26 @@
         line-height: 141.52%;
         color: #959290;
       }
+    }
+  }
+  .card-footer {
+    background-color: #1d1d1d;
+    padding: 0;
+    border: none !important;
+
+    .card-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+    }
+    .card-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #959290;
+
+      text-align: left;
     }
   }
 }

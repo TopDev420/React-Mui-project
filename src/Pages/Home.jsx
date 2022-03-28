@@ -74,6 +74,29 @@ const Home = () => {
                   <div className="header-bottom">23 minutes ago</div>
                 </div>
               </Card.Header>
+              <Card.Footer className="border-tb">
+                <Card.Title className="mb-10 ml-25 mt-20 d-flex">
+                  Quick update!
+                </Card.Title>
+                <Card.Text className="mb-25 ml-25 d-flex">
+                  Sapien hendrerit aliquam, enim adipiscing. Enim vulputate
+                  tempor amet viverra eu commodo egestas. Vulputate eget aenean
+                  sed hendrerit.
+                </Card.Text>
+              </Card.Footer>
+            </Card>
+
+            <Card>
+              <Card.Header className="mb-25">
+                <img src={User} className="mr-20" alt=""></img>
+                <div>
+                  <div className="header-top">
+                    <span className="header-name mr-5">rowanberri </span>
+                    <span className="">posted a video</span>
+                  </div>
+                  <div className="header-bottom">23 minutes ago</div>
+                </div>
+              </Card.Header>
               <Card.Body className="border-tb">
                 <Card.Img src={Image2} className="mb-20 border-tl border-tr" />
                 <Card.Title className="mb-10 ml-25 d-flex">
