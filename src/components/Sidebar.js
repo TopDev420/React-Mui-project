@@ -14,25 +14,25 @@ const Sidebar = () => {
     }];
     return (
         <div className="sidebar">
-            <div className="container">
+            <div className="sidebar-container">
                 <div className="link-item"><MdHomeFilled /><span>Home</span></div>
                 <div className="link-item"><FaRegUserCircle /><span>Profile</span></div>
                 <div className="link-item"><RiSettings5Fill /><span>Settings</span></div>
             </div>
-            <div className="container">
+            <div className="sidebar-container">
                 <div className="sidebar-title">Supported Creators</div>
-                <div className="creater-item"><img src={User2} /><span>zyrlspn</span></div>
-                <div className="creater-item"><img src={User2} /><span>rowanberri</span></div>
-                <div className="creater-item"><img src={User2} /><span>rexsdev123</span></div>
-                <div className="creater-item"><img src={User2} /><span>marinaho</span></div>
+                <div className="creater-item"><img src={User2} alt="" /><span>zyrlspn</span><span className='sidebar-new'>NEW</span></div>
+                <div className="creater-item"><img src={User2} alt="" /><span>rowanberri</span></div>
+                <div className="creater-item"><img src={User2} alt="" /><span>rexsdev123</span></div>
+                <div className="creater-item"><img src={User2} alt="" /><span>marinaho</span></div>
                 <div className="creater-more"><MdOutlineExpandMore /><span>More</span></div>
             </div>
-            <div className="container">
+            <div className="sidebar-container">
                 <div className="sidebar-title">Recommendations</div>
                 <div className='sidebar-card'>
                     <div>
                         <div className='scard-header'>
-                            <img src={info[0].url}></img>
+                            <img src={info[0].url} alt=""></img>
                         </div>
                         <div className='scard-body'>
                             <div className='scard-title'>{info[0].title}</div>

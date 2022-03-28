@@ -1,4 +1,6 @@
 import './App.css';
+import './assets/style/common.css'
+
 import Navbars from './components/Navbar';
 import Home from './Pages/Home';
 

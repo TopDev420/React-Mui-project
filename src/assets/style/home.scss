@@ -4,4 +4,117 @@
     display: flex;
     justify-content: center;
   }
+
+  .homepage-right {
+    display: flex;
+    flex-direction: column;
+
+    .homepage-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 572px;
+      margin-top: 90px;
+
+      span {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #ffffff;
+      }
+      .homepage-option {
+        padding: 5px;
+        background-color: #1d1d1d;
+        border-radius: 5px;
+        color: #535353;
+        display: flex;
+      }
+    }
+  }
+}
+
+.card-group {
+  width: 572px !important;
+  min-width: 572px !important;
+  flex-direction: column !important;
+}
+
+.card {
+  background-color: transparent !important;
+  padding-bottom: 30px;
+  border: none !important;
+
+  .border-tl {
+    border-top-left-radius: 20px;
+  }
+  .border-tr {
+    border-top-right-radius: 20px;
+  }
+  .border-bl {
+    border-bottom-left-radius: 20px;
+  }
+  .border-br {
+    border-bottom-right-radius: 20px;
+  }
+
+  .border-tb {
+    border-radius: 20px;
+  }
+
+  .card-header {
+    display: flex;
+    background-color: transparent !important;
+    border: none !important;
+    margin: 23px 0;
+
+    .header-top {
+      display: flex !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #959290;
+      .header-name {
+        color: white;
+      }
+    }
+    .header-bottom {
+      display: flex !important;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #959290;
+    }
+  }
+  .card-body {
+    background-color: #1d1d1d;
+    padding: 0;
+
+    .card-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+    }
+    .card-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #959290;
+
+      text-align: left;
+    }
+    .card-favoir {
+      margin: right 25px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        margin: 0 20px 0 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 141.52%;
+        color: #959290;
+      }
+    }
+  }
 }

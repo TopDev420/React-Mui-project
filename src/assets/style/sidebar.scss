@@ -2,10 +2,10 @@
   width: 217px;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 70px;
   background-color: #121212;
 
-  .container {
+  .sidebar-container {
     padding: 13px 0;
     margin: 0;
     display: flex;
@@ -17,7 +17,7 @@
     }
 
     span {
-      padding-left: 10px;
+      margin-left: 10px;
     }
 
     .link-item {
@@ -47,6 +47,21 @@
     .creater-item img {
       width: 24px;
       height: 24px;
+    }
+
+    .sidebar-new {
+      width: 33px;
+      height: 17px;
+      background: linear-gradient(270deg, #7b31e4 0%, #3368f7 100%);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-weight: 700;
+      font-size: 9px;
+      line-height: 11px;
+      color: #ffffff;
     }
 
     .creater-more {
@@ -84,6 +99,8 @@
           width: 217px;
           height: 77px;
           background-image: url(../imgs/scard-bg.png);
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
 
           & > img {
             position: absolute;

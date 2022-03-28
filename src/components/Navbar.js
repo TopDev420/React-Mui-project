@@ -1,42 +1,42 @@
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
+import { Navbar, Container, Nav } from "react-bootstrap"
 
 import Logo from '../assets/logo.svg'
 import User1 from '../assets/users/user1.png'
 
 import { MdFitScreen } from "react-icons/md"
-import { BsChatSquareFill } from "react-icons/bs";
+import { BsChatSquareFill, BsSearch } from "react-icons/bs";
 import { HiBell } from "react-icons/hi";
 import '../assets/style/navbar.css'
 
 const Navbars = () => {
     const User = () => {
         return (
-            <img src={User1} id="user"></img>
+            <img src={User1} id="user" className="ml-20" alt=""></img>
         )
     }
     return (
         <Navbar expand="lg" id="nav">
-            <Container >
+            <Container className="nav-container" >
                 <div className="nav-left">
-                    <Navbar.Brand href="#home"><img src={Logo} id="logo"></img></Navbar.Brand>
-                    <form action="/" method="get">
-                        <></>
+                    <Navbar.Brand href="#home"><img src={Logo} id="logo" alt=""></img></Navbar.Brand>
+                    <form action="/" method="get" id="nav-search">
+                        <BsSearch id="serch-icon" />
                         <input
                             type="text"
                             id="navbar-search"
                             placeholder="Search blog posts"
-                            name="s"
+                            name="search"
                         />
                     </form>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" theme="light" />
                 </div>
                 <div>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#home" className="nav-links">Explore Exclusive</Nav.Link>
-                            <Nav.Link href="#link" className="nav-links">Trending</Nav.Link>
-                            <Nav.Link href="#link" className="nav-links">Live</Nav.Link>
-                            <Nav.Link href="#link" className="nav-links">Top Creators</Nav.Link>
+                            <Nav.Link href="#home" className="nav-links">Trending</Nav.Link>
+                            <Nav.Link href="#home" className="nav-links">Live</Nav.Link>
+                            <Nav.Link href="#home" className="nav-links">Top Creators</Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -48,10 +48,10 @@ const Navbars = () => {
                     </Navbar.Collapse>
                 </div>
                 <div>
-                    <MdFitScreen />
-                    <BsChatSquareFill />
-                    <HiBell />
-                    <button id="create-">Create</button>
+                    <MdFitScreen className="ml-20" />
+                    <BsChatSquareFill className="ml-20" />
+                    <HiBell className="ml-20" />
+                    <button id="nav-btn" className="ml-30">Create</button>
                     <User />
                 </div>
             </Container>
