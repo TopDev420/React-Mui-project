@@ -3,8 +3,8 @@ import { MdHomeFilled } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiSettings5Fill } from "react-icons/ri";
 import { MdOutlineExpandMore } from "react-icons/md";
-import User2 from '../assets/users/user2.png'
-import User6 from '../assets/users/user6.png'
+import User2 from '../assets/imgs/users/user2.png'
+import User6 from '../assets/imgs/users/user6.png'
 
 const Sidebar = () => {
     const info = [{

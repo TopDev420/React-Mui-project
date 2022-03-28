@@ -1,5 +1,8 @@
 #homepage {
   background-color: #121212;
+  #homepage-container {
+    --bs-gutter-x: 0rem;
+  }
   .homepage-left {
     display: flex;
     justify-content: center;
@@ -103,8 +106,8 @@
 
       text-align: left;
     }
-    .card-favoir {
-      margin: right 25px;
+    .card-favor {
+      margin: 25px;
       display: flex;
       justify-content: space-between;
 
@@ -135,6 +138,124 @@
       color: #959290;
 
       text-align: left;
+    }
+    .card-link {
+      height: 63px;
+      background: #2a2a2a;
+      border: 1px solid #333333;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin: 30px 25px 0;
+      display: flex;
+      align-items: center;
+
+      .link-icon {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #959290;
+      }
+      .link-content {
+        border-left: solid 1px #333333;
+        height: inherit;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .link-top {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: #ffffff;
+        }
+        .link-bottom {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #959290;
+        }
+      }
+    }
+    .card-favor {
+      margin: 25px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        margin: 0 20px 0 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 141.52%;
+        color: #959290;
+      }
+    }
+    .card-line {
+      border-bottom: solid 1px #959290;
+      margin: 0 25px 20px;
+    }
+
+    .chat-container {
+      display: flex;
+      text-align: left;
+      margin: 20px 25px !important;
+
+      & > img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px !important;
+      }
+      .chat-content {
+        .post-comment {
+          width: 471px;
+          height: 40px;
+          background: #232323;
+          border-radius: 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 15px;
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #535353;
+        }
+        .chat-title {
+          display: flex !important;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: #959290;
+          margin-bottom: 5px !important;
+          justify-content: space-between;
+
+          .chat-name {
+            color: white;
+          }
+        }
+        .chat-text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: left;
+          color: #ffffff;
+          margin-bottom: 8px;
+        }
+        .chat-favor {
+          margin-bottom: 20px;
+          display: flex;
+
+          span {
+            margin: 0 20px 0 10px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 141.52%;
+            color: #959290;
+          }
+        }
+      }
     }
   }
 }

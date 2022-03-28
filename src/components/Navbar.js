@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap"
 
-import Logo from '../assets/logo.svg'
-import User1 from '../assets/users/user1.png'
+import Logo from '../assets/imgs/logo.svg'
+import User1 from '../assets/imgs/users/user1.png'
 
 import { MdFitScreen } from "react-icons/md"
 import { BsChatSquareFill, BsSearch } from "react-icons/bs";
