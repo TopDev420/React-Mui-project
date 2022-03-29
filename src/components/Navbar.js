@@ -3,9 +3,10 @@ import { Navbar, Container, Nav } from "react-bootstrap"
 import Logo from '../assets/imgs/logo.svg'
 import User1 from '../assets/imgs/users/user1.png'
 
-import { MdFitScreen } from "react-icons/md"
-import { BsChatSquareFill, BsSearch } from "react-icons/bs";
-import { HiBell } from "react-icons/hi";
+import Screen from '../assets/imgs/icons/screen.svg'
+import Chat from '../assets/imgs/icons/chat.svg'
+import Bell from '../assets/imgs/icons/bell.svg'
+import { BsSearch } from "react-icons/bs";
 import '../assets/style/navbar.css'
 
 const Navbars = () => {
@@ -24,7 +25,7 @@ const Navbars = () => {
                         <input
                             type="text"
                             id="navbar-search"
-                            placeholder="Search blog posts"
+                            placeholder="Search Exclusive Content"
                             name="search"
                         />
                     </form>
@@ -48,9 +49,9 @@ const Navbars = () => {
                     </Navbar.Collapse>
                 </div>
                 <div>
-                    <MdFitScreen className="ml-20" />
-                    <BsChatSquareFill className="ml-20" />
-                    <HiBell className="ml-20" />
+                    <img src={Screen} className="ml-20" />
+                    <img src={Chat} className="ml-20" />
+                    <img src={Bell} className="ml-20" />
                     <button id="nav-btn" className="ml-30">Create</button>
                     <User />
                 </div>

@@ -3,8 +3,11 @@ import Sidebar from "../components/Sidebar"
 
 import { IoMdOptions } from "react-icons/io"
 import { BsLink45Deg } from "react-icons/bs"
-import User from "../assets/imgs/users/user3.png"
-import User2 from "../assets/imgs/users/user4.png"
+import Rowanberri from "../assets/imgs/users/rowanberri.png"
+import User from "../assets/imgs/users/user1.png"
+import Ashho from "../assets/imgs/users/ashho.png"
+import Marinaho from "../assets/imgs/users/marinaho.png"
+
 import Image1 from "../assets/imgs/image1.png"
 import Image2 from "../assets/imgs/image2.png"
 import Image3 from "../assets/imgs/image3.png"
@@ -22,10 +25,10 @@ const Home = () => {
   return (
     <div id="homepage">
       <Row id="homepage-container">
-        <Col md={{ span: 3, offset: 1 }} className="homepage-left">
+        <Col md={4} className="homepage-left">
           <Sidebar />
         </Col>
-        <Col md={7} className="homepage-right">
+        <Col md={8} className="homepage-right">
           <div className="homepage-title">
             <span>Recent</span>
             <div className="homepage-option">
@@ -35,7 +38,7 @@ const Home = () => {
           <CardGroup>
             <Card>
               <Card.Header className="mb-25">
-                <img src={User} className="mr-20" alt=""></img>
+                <img src={Rowanberri} alt=""></img>
                 <div>
                   <div className="header-top">
                     <span className="header-name mr-5">rowanberri </span>
@@ -69,7 +72,7 @@ const Home = () => {
 
             <Card>
               <Card.Header className="mb-25">
-                <img src={User} className="mr-20" alt=""></img>
+                <img src={Rowanberri} alt=""></img>
                 <div>
                   <div className="header-top">
                     <span className="header-name mr-5">rowanberri </span>
@@ -98,7 +101,7 @@ const Home = () => {
                 </div>
                 <div className="card-line"></div>
                 <div className="chat-container">
-                  <img src={User2} />
+                  <img src={User} />
                   <div className="chat-content">
                     <div className="post-comment">
                       Post Comment
@@ -107,7 +110,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="chat-container">
-                  <img src={User2} />
+                  <img src={Ashho} />
                   <div className="chat-content">
                     <div className="chat-title">
                       <div>
@@ -122,15 +125,15 @@ const Home = () => {
                       urna, eget urna.
                     </div>
                     <div className="chat-favor">
-                      <img src={Icon2} alt="" />
+                      <img src={Icon2} width="12px" height="12px" alt="" />
                       <span>Like</span>
-                      <img src={Icon1} alt="" />
+                      <img src={Icon1} width="12px" height="12px" alt="" />
                       <span>1</span>
                     </div>
                   </div>
                 </div>
                 <div className="chat-container">
-                  <img src={User2} />
+                  <img src={Marinaho} />
                   <div className="chat-content">
                     <div className="chat-title">
                       <div>
@@ -152,7 +155,7 @@ const Home = () => {
                         alt=""
                       />
                       <span>23</span>
-                      <img src={Icon1} alt="" />
+                      <img src={Icon1} width="12px" height="12px" alt="" />
                       <span>Reply</span>
                     </div>
                   </div>
@@ -162,7 +165,7 @@ const Home = () => {
 
             <Card>
               <Card.Header className="mb-25">
-                <img src={User} className="mr-20" alt=""></img>
+                <img src={Rowanberri} alt=""></img>
                 <div>
                   <div className="header-top">
                     <span className="header-name mr-5">rowanberri </span>
@@ -198,7 +201,7 @@ const Home = () => {
 
             <Card>
               <Card.Header className="mb-25">
-                <img src={User} className="mr-20" alt=""></img>
+                <img src={Rowanberri} alt=""></img>
                 <div>
                   <div className="header-top">
                     <span className="header-name mr-5">rowanberri </span>
@@ -226,7 +229,7 @@ const Home = () => {
                 </div>
                 <div className="card-line"></div>
                 <div className="chat-container">
-                  <img src={User2} />
+                  <img src={User} />
                   <div className="chat-content">
                     <div className="post-comment">
                       Post Comment
@@ -237,9 +240,9 @@ const Home = () => {
               </Card.Footer>
             </Card>
 
-            <Card>
+            <Card className="mb-30">
               <Card.Header className="mb-25">
-                <img src={User} className="mr-20" alt=""></img>
+                <img src={Rowanberri} alt=""></img>
                 <div>
                   <div className="header-top">
                     <span className="header-name mr-5">rowanberri </span>

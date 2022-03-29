@@ -3,12 +3,15 @@ import { MdHomeFilled } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiSettings5Fill } from "react-icons/ri";
 import { MdOutlineExpandMore } from "react-icons/md";
-import User2 from '../assets/imgs/users/user2.png'
-import User6 from '../assets/imgs/users/user6.png'
+import Zyrlspn from '../assets/imgs/users/zyrlspn.png'
+import Rowanberri from '../assets/imgs/users/rowanberri.png'
+import Rexsdev123 from '../assets/imgs/users/rexsdev123.png'
+import Marinaho from '../assets/imgs/users/marinaho.png'
+import Samibabie from '../assets/imgs/users/samibabie.png'
 
 const Sidebar = () => {
     const info = [{
-        url: User6,
+        url: Samibabie,
         title: "samibabie",
         content: "they/them, neurodivergent, adores cute things"
     }];
@@ -21,10 +24,10 @@ const Sidebar = () => {
             </div>
             <div className="sidebar-container">
                 <div className="sidebar-title">Supported Creators</div>
-                <div className="creater-item"><img src={User2} alt="" /><span>zyrlspn</span><span className='sidebar-new'>NEW</span></div>
-                <div className="creater-item"><img src={User2} alt="" /><span>rowanberri</span></div>
-                <div className="creater-item"><img src={User2} alt="" /><span>rexsdev123</span></div>
-                <div className="creater-item"><img src={User2} alt="" /><span>marinaho</span></div>
+                <div className="creater-item"><img src={Zyrlspn} alt="" /><span>zyrlspn</span><span className='sidebar-new'>NEW</span></div>
+                <div className="creater-item"><img src={Rowanberri} alt="" /><span>rowanberri</span></div>
+                <div className="creater-item"><img src={Rexsdev123} alt="" /><span>rexsdev123</span></div>
+                <div className="creater-item"><img src={Marinaho} alt="" /><span>marinaho</span></div>
                 <div className="creater-more"><MdOutlineExpandMore /><span>More</span></div>
             </div>
             <div className="sidebar-container">

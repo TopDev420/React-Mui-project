@@ -18,6 +18,7 @@
       align-items: center;
       max-width: 572px;
       margin-top: 90px;
+      margin-bottom: 35px;
 
       span {
         font-weight: 700;
@@ -44,7 +45,7 @@
 
 .card {
   background-color: transparent !important;
-  padding-bottom: 30px;
+  margin-bottom: 50px !important;
   border: none !important;
 
   .border-tl {
@@ -69,7 +70,15 @@
     background-color: transparent !important;
     border: none !important;
     margin: 23px 0;
+    padding: 0;
 
+    & > div {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 15px;
+    }
     .header-top {
       display: flex !important;
       font-weight: 700;
@@ -246,11 +255,12 @@
         .chat-favor {
           margin-bottom: 20px;
           display: flex;
+          align-items: center;
 
           span {
-            margin: 0 20px 0 10px;
+            margin: 0 17px 0 5px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 141.52%;
             color: #959290;
           }
