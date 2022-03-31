@@ -1,12 +1,12 @@
 import { Navbar, Container, Nav } from "react-bootstrap"
 
 import Logo from '../assets/imgs/logo.svg'
-import User1 from '../assets/imgs/users/user1.png'
+import User1 from '../assets/imgs/users/user1.svg'
+import Search from '../assets/imgs/icons/search.svg'
 
 import Screen from '../assets/imgs/icons/screen.svg'
 import Chat from '../assets/imgs/icons/chat.svg'
 import Bell from '../assets/imgs/icons/bell.svg'
-import { BsSearch } from "react-icons/bs";
 import '../assets/style/navbar.css'
 
 const Navbars = () => {
@@ -21,7 +21,7 @@ const Navbars = () => {
                 <div className="nav-left">
                     <Navbar.Brand href="#home"><img src={Logo} id="logo" alt=""></img></Navbar.Brand>
                     <form action="/" method="get" id="nav-search">
-                        <BsSearch id="serch-icon" />
+                        <img src={Search} />
                         <input
                             type="text"
                             id="navbar-search"
@@ -29,7 +29,7 @@ const Navbars = () => {
                             name="search"
                         />
                     </form>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" theme="light" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 </div>
                 <div>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -49,7 +49,7 @@ const Navbars = () => {
                     </Navbar.Collapse>
                 </div>
                 <div>
-                    <img src={Screen} className="ml-20" />
+                    <img src={Screen} />
                     <img src={Chat} className="ml-20" />
                     <img src={Bell} className="ml-20" />
                     <button id="nav-btn" className="ml-30">Create</button>

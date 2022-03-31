@@ -3,11 +3,15 @@ import { MdHomeFilled } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiSettings5Fill } from "react-icons/ri";
 import { MdOutlineExpandMore } from "react-icons/md";
-import Zyrlspn from '../assets/imgs/users/zyrlspn.png'
-import Rowanberri from '../assets/imgs/users/rowanberri.png'
-import Rexsdev123 from '../assets/imgs/users/rexsdev123.png'
-import Marinaho from '../assets/imgs/users/marinaho.png'
-import Samibabie from '../assets/imgs/users/samibabie.png'
+import Zyrlspn from '../assets/imgs/users/zyrlspn.svg'
+import Rowanberri from '../assets/imgs/users/rowanberri.svg'
+import Rexsdev123 from '../assets/imgs/users/rexsdev123.svg'
+import Marinaho from '../assets/imgs/users/marinaho.svg'
+import Samibabie from '../assets/imgs/users/samibabie.svg'
+import Home from '../assets/imgs/icons/home.svg'
+import Profile from '../assets/imgs/icons/profile.svg'
+import Setting from '../assets/imgs/icons/setting.svg'
+
 
 const Sidebar = () => {
     const info = [{
@@ -18,9 +22,9 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebar-container">
-                <div className="link-item"><MdHomeFilled /><span>Home</span></div>
-                <div className="link-item"><FaRegUserCircle /><span>Profile</span></div>
-                <div className="link-item"><RiSettings5Fill /><span>Settings</span></div>
+                <div className="link-item"><img src={Home} /><span>Home</span></div>
+                <div className="link-item"><img src={Profile} /><span>Profile</span></div>
+                <div className="link-item"><img src={Setting} /><span>Settings</span></div>
             </div>
             <div className="sidebar-container">
                 <div className="sidebar-title">Supported Creators</div>

@@ -1,5 +1,6 @@
 #homepage {
   background-color: #121212;
+
   #homepage-container {
     --bs-gutter-x: 0rem;
   }
@@ -11,17 +12,21 @@
   .homepage-right {
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 900px) {
+      align-items: center;
+    }
 
     .homepage-title {
       display: flex;
       justify-content: space-between;
       align-items: center;
       max-width: 572px;
+      width: 80%;
       margin-top: 90px;
       margin-bottom: 35px;
 
       span {
-        font-weight: 700;
+        font-family: "InterBold";
         font-size: 24px;
         line-height: 29px;
         color: #ffffff;
@@ -38,15 +43,21 @@
 }
 
 .card-group {
-  width: 572px !important;
-  min-width: 572px !important;
+  width: 572px;
   flex-direction: column !important;
+  @media only screen and (max-width: 900px) {
+    width: 80%;
+    // min-width: 80% !important;
+    // max-width: 572px;
+  }
 }
 
 .card {
   background-color: transparent !important;
   margin-bottom: 50px !important;
   border: none !important;
+  width: 100%;
+  // min-width: 572px !important;
 
   .border-tl {
     border-top-left-radius: 20px;
@@ -78,20 +89,23 @@
       flex-direction: column;
       justify-content: center;
       margin-left: 15px;
+      width: 100%;
     }
     .header-top {
       display: flex !important;
-      font-weight: 700;
+      font-family: "InterRegular";
       font-size: 16px;
       line-height: 19px;
       color: #959290;
+      width: 100%;
       .header-name {
+        font-family: "InterBold";
         color: white;
       }
     }
     .header-bottom {
       display: flex !important;
-      font-weight: 400;
+      font-family: "InterRegular";
       font-size: 12px;
       line-height: 15px;
       color: #959290;
@@ -102,13 +116,13 @@
     padding: 0;
 
     .card-title {
-      font-weight: 700;
+      font-family: "InterBold";
       font-size: 16px;
       line-height: 19px;
       color: #ffffff;
     }
     .card-text {
-      font-weight: 400;
+      font-family: "InterRegular";
       font-size: 14px;
       line-height: 20px;
       color: #959290;
@@ -119,13 +133,21 @@
       margin: 25px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
+      & > div {
+        display: flex;
+        align-items: center;
+      }
       span {
         margin: 0 20px 0 10px;
-        font-weight: 400;
+        font-family: "InterRegular";
         font-size: 16px;
         line-height: 141.52%;
         color: #959290;
+        @media only screen and (max-width: 364px) {
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -135,13 +157,13 @@
     border: none !important;
 
     .card-title {
-      font-weight: 700;
+      font-family: "InterBold";
       font-size: 16px;
       line-height: 19px;
       color: #ffffff;
     }
     .card-text {
-      font-weight: 400;
+      font-family: "InterRegular";
       font-size: 14px;
       line-height: 20px;
       color: #959290;
@@ -174,13 +196,13 @@
         justify-content: center;
 
         .link-top {
-          font-weight: 700;
+          font-family: "InterBold";
           font-size: 16px;
           line-height: 19px;
           color: #ffffff;
         }
         .link-bottom {
-          font-weight: 400;
+          font-family: "InterRegular";
           font-size: 14px;
           line-height: 20px;
           color: #959290;
@@ -191,24 +213,30 @@
       margin: 25px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
+      & > div {
+        display: flex;
+        align-items: center;
+      }
       span {
         margin: 0 20px 0 10px;
-        font-weight: 400;
+        font-family: "InterRegular";
         font-size: 16px;
         line-height: 141.52%;
         color: #959290;
       }
     }
     .card-line {
-      border-bottom: solid 1px #959290;
+      border-bottom: solid 1px #2a2a2a;
       margin: 0 25px 20px;
     }
 
     .chat-container {
       display: flex;
       text-align: left;
-      margin: 20px 25px !important;
+      padding: 10px 25px !important;
+      width: 100%;
 
       & > img {
         width: 40px;
@@ -216,8 +244,11 @@
         margin-right: 20px !important;
       }
       .chat-content {
+        width: inherit;
+
         .post-comment {
-          width: 471px;
+          // width: 471px;
+          width: -webkit-fill-available;
           height: 40px;
           background: #232323;
           border-radius: 100px;
@@ -226,26 +257,27 @@
           align-items: center;
           padding: 0 15px;
 
-          font-weight: 400;
+          font-family: "InterRegular";
           font-size: 14px;
           line-height: 20px;
           color: #535353;
         }
         .chat-title {
           display: flex !important;
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 19px;
+          font-family: "InterRegular";
+          font-size: 14px;
+          line-height: 17px;
           color: #959290;
           margin-bottom: 5px !important;
           justify-content: space-between;
 
           .chat-name {
+            font-family: "InterBold";
             color: white;
           }
         }
         .chat-text {
-          font-weight: 400;
+          font-family: "InterRegular";
           font-size: 14px;
           line-height: 20px;
           text-align: left;
@@ -253,13 +285,13 @@
           margin-bottom: 8px;
         }
         .chat-favor {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           display: flex;
           align-items: center;
 
           span {
             margin: 0 17px 0 5px;
-            font-weight: 400;
+            font-family: "InterRegular";
             font-size: 12px;
             line-height: 141.52%;
             color: #959290;
@@ -268,4 +300,11 @@
       }
     }
   }
+}
+
+.card-video {
+  max-width: "572px";
+  max-height: "361px";
+  width: 100%;
+  height: auto;
 }

@@ -2,12 +2,12 @@
   width: 217px;
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 100px;
   background-color: #121212;
 
   .sidebar-container {
-    padding: 13px 0 18px;
-    margin: 0;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
     display: flex;
     flex-direction: column;
     border-bottom: solid 1px #2a2a2a;
@@ -21,32 +21,43 @@
     }
 
     .link-item {
-      font-weight: 700;
+      font-family: "InterBold";
       font-size: 16px;
       line-height: 19px;
       color: #ffffff;
 
-      margin: 12px 0;
+      margin-bottom: 27px;
       display: flex;
       justify-content: start;
       align-items: center;
+      margin-bottom: 27px;
+    }
+
+    .sidebar-title {
+      font-family: "InterBold";
+      font-size: 12px;
+      line-height: 15px;
+      color: #959290;
+
+      margin-bottom: 29px;
+      display: flex;
+      justify-content: start;
     }
 
     .creater-item {
-      font-weight: 500;
+      font-family: "InterMedium";
       font-size: 16px;
       line-height: 19px;
       color: #ffffff;
 
-      margin: 10px 0;
+      margin-bottom: 15px;
       display: flex;
       justify-content: start;
       align-items: center;
-    }
-
-    .creater-item img {
-      width: 24px;
-      height: 24px;
+      & img {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     .sidebar-new {
@@ -58,32 +69,23 @@
       justify-content: center;
       align-items: center;
 
-      font-weight: 700;
+      font-family: "InterBold";
       font-size: 9px;
       line-height: 11px;
       color: #ffffff;
     }
 
     .creater-more {
-      font-weight: 500;
+      font-family: "InterMedium";
       font-size: 16px;
       line-height: 19px;
       color: #ffffff;
       display: flex;
       justify-content: start;
       align-items: center;
-      margin: 10px 0;
+      margin: 12px 0 24px;
     }
 
-    .sidebar-title {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-      color: #959290;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: start;
-    }
     .sidebar-card {
       display: flex;
       justify-content: center;
@@ -118,11 +120,11 @@
           align-items: center;
 
           .scard-title {
-            margin-top: 40px;
+            margin-top: 43px;
             text-align: center;
             color: #ffffff;
 
-            font-weight: 700;
+            font-family: "InterBold";
             font-size: 16px;
             line-height: 19px;
           }
@@ -134,7 +136,7 @@
             color: #959290;
             margin-top: 4px;
 
-            font-weight: 400;
+            font-family: "InterRegular";
             font-size: 12px;
             line-height: 141.52%;
           }
@@ -147,7 +149,7 @@
             margin-top: 16px;
             border: none;
 
-            font-weight: 400;
+            font-family: "InterRegular";
             font-size: 14px;
             line-height: 17px;
             text-align: center;
