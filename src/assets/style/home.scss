@@ -93,6 +93,7 @@
     }
     .header-top {
       display: flex !important;
+      position: relative;
       font-family: "InterRegular";
       font-size: 16px;
       line-height: 19px;
@@ -101,6 +102,81 @@
       .header-name {
         font-family: "InterBold";
         color: white;
+      }
+
+      /* The actual popup */
+      .popuptext {
+        visibility: hidden;
+        color: #fff;
+        padding: 10px 12px;
+        position: absolute;
+        z-index: 1;
+        width: 254px;
+        height: 75px;
+        background: #1d1d1d;
+        border-radius: 10px;
+        bottom: 125%;
+        left: 48%;
+        @media only screen and (max-width: 992px) {
+          left: 100px;
+        }
+        @media only screen and (max-width: 767px) {
+          left: 40px;
+        }
+        @media only screen and (max-width: 400px) {
+          left: -8px;
+        }
+
+        .popuptext-title {
+          background: linear-gradient(270deg, #7b31e4 0%, #3368f7 100%);
+          -webkit-background-clip: text;
+          // -webkit-text-fill-color: transparent;
+          background-clip: text;
+          // text-fill-color: transparent;
+          color: transparent;
+          margin-bottom: 5px;
+        }
+      }
+      /* Popup arrow */
+      .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 7%;
+        border-width: 7px;
+        border-style: solid;
+        border-color: #1d1d1d transparent transparent transparent;
+        @media only screen and (max-width: 992px) {
+          left: 160px;
+        }
+        @media only screen and (max-width: 767px) {
+          left: 218px;
+        }
+        @media only screen and (max-width: 400px) {
+          left: 218px;
+        }
+      }
+      /* Toggle this class - hide and show the popup */
+      .show {
+        visibility: visible;
+        animation: fadeIn 1s;
+      }
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     }
     .header-bottom {

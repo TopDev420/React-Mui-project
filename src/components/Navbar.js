@@ -12,14 +12,14 @@ import '../assets/style/navbar.css'
 const Navbars = () => {
     const User = () => {
         return (
-            <img src={User1} id="user" className="ml-20" alt=""></img>
+            <Nav.Link href="/profile" id="user" className="ml-20"><img src={User1} alt=""></img></Nav.Link>
         )
     }
     return (
         <Navbar expand="lg" id="nav">
             <Container className="nav-container" >
                 <div className="nav-left">
-                    <Navbar.Brand href="#home"><img src={Logo} id="logo" alt=""></img></Navbar.Brand>
+                    <Navbar.Brand href="/home"><img src={Logo} id="logo" alt=""></img></Navbar.Brand>
                     <form action="/" method="get" id="nav-search">
                         <img src={Search} />
                         <input

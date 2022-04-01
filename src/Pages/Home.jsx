@@ -23,6 +23,7 @@ import Eye from "../assets/imgs/icons/eye.svg"
 import Dots from "../assets/imgs/icons/dots.svg"
 import Smile from "../assets/imgs/icons/smile.svg"
 import Favor from "../assets/imgs/favor.svg"
+
 import "../assets/style/home.scss"
 
 const Home = () => {
