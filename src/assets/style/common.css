@@ -2,6 +2,9 @@
   margin: 25px !important;
 }
 
+.ml-10 {
+  margin-left: 10px !important;
+}
 .ml-20 {
   margin-left: 20px !important;
 }
@@ -50,10 +53,18 @@
 .mt-20 {
   margin-top: 20px !important;
 }
+.mt-30 {
+  margin-top: 30px !important;
+}
 
 /* font-setting */
 
 /** bold*/
+.font-b10 {
+  font-family: "InterBold";
+  font-size: 10px;
+  line-height: 12px;
+}
 .font-b12 {
   font-family: "InterBold";
   font-size: 12px;
@@ -98,6 +109,26 @@
   line-height: 19px;
 }
 
+/** color */
 .white {
   color: white;
+}
+
+/** button */
+.button1 {
+  width: 107px;
+  height: 40px;
+  background: linear-gradient(270deg, #7b31e4 0%, #3368f7 100%);
+  border-radius: 100px;
+  border: none;
+  color: #ffffff;
+}
+
+.button2 {
+  width: 107px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #535353;
+  border-radius: 100px;
+  color: #535353;
 }

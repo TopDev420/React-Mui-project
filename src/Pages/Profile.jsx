@@ -13,6 +13,7 @@ import Twitter from "../assets/imgs/icons/twitter.svg"
 import Discord from "../assets/imgs/icons/discord.svg"
 import Linkedin from "../assets/imgs/icons/linkedin.svg"
 import Facebook from "../assets/imgs/icons/facebook.svg"
+import Lock from "../assets/imgs/icons/lock.svg"
 
 import "../assets/style/profile.scss"
 
@@ -47,10 +48,11 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-header-bottom">
-          <Tabs defaultActiveKey="Home" id="controlled-tab-example">
+          <Tabs defaultActiveKey="profile" id="controlled-tab-example">
             <Tab eventKey="profile" title="Profile"></Tab>
-            <Tab eventKey="home" title="Home"></Tab>
-            <Tab eventKey="contact" title="Contact"></Tab>
+            <Tab eventKey="posts" title="Posts"></Tab>
+            <Tab eventKey="gallery" title="Gallery"></Tab>
+            <Tab eventKey="collections" title="Collections"></Tab>
           </Tabs>
         </div>
       </div>
@@ -121,8 +123,26 @@ const Profile = () => {
                 </div>
               </Card.Header>
               <Card.Body className="border-tb">
-                <Card.Img src={Blurry1} className="mb-20 border-tl border-tr" />
-                <div className="ml-20">
+                <div style={{ position: "relative" }}>
+                  <Card.Img
+                    src={Blurry1}
+                    className="mb-20 border-tl border-tr"
+                  />
+                  <div className="card-img-modal">
+                    <img src={Lock} alt=""></img>
+                    <div className="font-b16 white mb-10">
+                      This content is exclusive!
+                    </div>
+                    <div className="font-r12 mb-10">
+                      You need to be subscribed to this user in order to unlock
+                      it.
+                    </div>
+                    <button className="font-b14 white card-modal-unlock">
+                      Unlock
+                    </button>
+                  </div>
+                </div>
+                <div className="ml-20 mr-20">
                   <div className="card-blurry1"></div>
                   <div className="card-blurry2"></div>
                   <div className="card-blurry3"></div>

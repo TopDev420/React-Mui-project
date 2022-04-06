@@ -14,9 +14,9 @@ import Profile from './Pages/Profile';
 function App() {
   return (
     <div className="App">
-      <Navbars />
       {/* <Home /> */}
       <Router>
+        <Navbars />
         <Routes >
           <Route path="/profile" element={<Profile />} />
           <Route path="/*" element={<Home />} />

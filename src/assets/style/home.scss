@@ -44,6 +44,7 @@
 
 .card-group {
   width: 572px;
+  max-width: 572px;
   flex-direction: column !important;
   @media only screen and (max-width: 900px) {
     width: 80%;
