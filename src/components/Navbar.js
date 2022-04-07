@@ -58,7 +58,7 @@ const Navbars = () => {
         <Navbar expand="lg" id="nav">
             <Container className="nav-container" >
                 <div className="nav-left">
-                    <Nav.Link href="/home" className="nav-links"><img src={Logo} id="nav-logo" alt=""></img></Nav.Link>
+                    <Nav.Link href="/home"><img src={Logo} id="nav-logo" alt=""></img></Nav.Link>
                     <form action="/" method="get" id="nav-search">
                         <img src={Search} />
                         <input

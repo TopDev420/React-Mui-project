@@ -159,4 +159,35 @@
       }
     }
   }
+  .sidebar-mobile {
+    display: none;
+    width: 100%;
+    padding: 13px 20px 17px;
+    flex-direction: column;
+    text-align: start;
+    color: #959290;
+    border: 1px solid #2a2a2a;
+
+    & > div:last-child {
+      display: flex;
+
+      & img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    margin-top: 0 !important;
+    width: 100% !important;
+    .sidebar-container {
+      display: none !important;
+    }
+    .sidebar-mobile {
+      display: flex !important;
+    }
+  }
 }

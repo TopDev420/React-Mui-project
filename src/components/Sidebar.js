@@ -1,13 +1,12 @@
 import '../assets/style/sidebar.scss'
-import { MdHomeFilled } from "react-icons/md";
-import { FaRegUserCircle } from "react-icons/fa";
-import { RiSettings5Fill } from "react-icons/ri";
 import { MdOutlineExpandMore } from "react-icons/md";
 import Zyrlspn from '../assets/imgs/users/zyrlspn.svg'
 import Rowanberri from '../assets/imgs/users/rowanberri.svg'
 import Rexsdev123 from '../assets/imgs/users/rexsdev123.svg'
 import Marinaho from '../assets/imgs/users/marinaho.svg'
 import Samibabie from '../assets/imgs/users/samibabie.svg'
+import Sploonathevillain from '../assets/imgs/users/sploonathevillain.svg'
+
 import Home from '../assets/imgs/icons/home.svg'
 import Profile from '../assets/imgs/icons/profile.svg'
 import Setting from '../assets/imgs/icons/setting.svg'
@@ -47,6 +46,16 @@ const Sidebar = () => {
                             <button className='scard-subscribe'>Subscribe</button>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="sidebar-mobile">
+                <div className='font-b10 mb-10 sidebar-mobile-title'>Supported Creators</div>
+                <div>
+                    <img src={Zyrlspn} alt="" />
+                    <img src={Marinaho} className="ml-10" alt="" />
+                    <img src={Rexsdev123} className="ml-10" alt="" />
+                    <img src={Sploonathevillain} className="ml-10" alt="" />
                 </div>
             </div>
         </div>
