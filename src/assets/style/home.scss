@@ -83,6 +83,11 @@
     border: none !important;
     margin: 23px 0;
     padding: 0;
+    & > img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+    }
 
     & > div {
       display: flex;

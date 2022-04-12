@@ -4,10 +4,10 @@ import Sidebar from "../components/Sidebar"
 import { IoMdOptions } from "react-icons/io"
 import { BsLink45Deg } from "react-icons/bs"
 
-import Rowanberri from "../assets/imgs/users/rowanberri.svg"
-import User from "../assets/imgs/users/user1.svg"
+import Rowanberri from "../assets/imgs/users/rowanberri.png"
+import User from "../assets/imgs/users/user1.png"
 import Ashho from "../assets/imgs/users/ashho.svg"
-import Marinaho from "../assets/imgs/users/marinaho.svg"
+import Marinaho from "../assets/imgs/users/marinaho.png"
 import Koncrete from "../assets/imgs/users/koncrete.svg"
 
 import Image1 from "../assets/imgs/image1.png"
@@ -48,7 +48,7 @@ const Home = () => {
                   <div className="header-top">
                     <span className="header-name mr-5">rowanberri </span>
                     <span className="mr-5">posted a photo</span>
-                    <img src={Favor} />
+                    <img src={Favor} alt="" />
                   </div>
                   <div className="header-bottom">23 minutes ago</div>
                 </div>
@@ -106,7 +106,7 @@ const Home = () => {
                 </div>
                 <div className="card-line"></div>
                 <div className="chat-container">
-                  <img src={User} />
+                  <img src={User} alt="" />
                   <div className="chat-content">
                     <div className="post-comment">
                       Post Comment
@@ -115,7 +115,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="chat-container">
-                  <img src={Ashho} />
+                  <img src={Ashho} alt="" />
                   <div className="chat-content">
                     <div className="chat-title">
                       <div>
@@ -138,7 +138,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="chat-container">
-                  <img src={Marinaho} />
+                  <img src={Marinaho} alt="" />
                   <div className="chat-content">
                     <div className="chat-title">
                       <div>

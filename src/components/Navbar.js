@@ -3,7 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap"
 import { useLocation } from "react-router-dom"
 
 import Logo from '../assets/imgs/logo.svg'
-import User1 from '../assets/imgs/users/user1.svg'
+import User1 from '../assets/imgs/users/user1.png'
 import Search from '../assets/imgs/icons/search.svg'
 
 import Screen from '../assets/imgs/icons/screen.svg'

@@ -1,6 +1,6 @@
 import { Tabs, Tab, Col, Row, Card, CardGroup } from "react-bootstrap"
 
-import Sploonathevillain from "../assets/imgs/users/sploonathevillain.svg"
+import Sploonathevillain from "../assets/imgs/users/sploonathevillain.png"
 import Blurry1 from "../assets/imgs/blurry1.png"
 
 import Msg from "../assets/imgs/icons/msg.svg"
@@ -25,7 +25,7 @@ const Profile = () => {
         <div className="profile-header-top">
           <div className="pro-header-top-left">
             <div>
-              <img src={Sploonathevillain} />
+              <img src={Sploonathevillain} alt="" />
             </div>
             <div>
               <span

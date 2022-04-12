@@ -1,11 +1,11 @@
 import '../assets/style/sidebar.scss'
 import { MdOutlineExpandMore } from "react-icons/md";
-import Zyrlspn from '../assets/imgs/users/zyrlspn.svg'
-import Rowanberri from '../assets/imgs/users/rowanberri.svg'
-import Rexsdev123 from '../assets/imgs/users/rexsdev123.svg'
-import Marinaho from '../assets/imgs/users/marinaho.svg'
-import Samibabie from '../assets/imgs/users/samibabie.svg'
-import Sploonathevillain from '../assets/imgs/users/sploonathevillain.svg'
+import Zyrlspn from '../assets/imgs/users/zyrlspn.png'
+import Rowanberri from '../assets/imgs/users/rowanberri.png'
+import Rexsdev123 from '../assets/imgs/users/rexsdev123.png'
+import Marinaho from '../assets/imgs/users/marinaho.png'
+import Samibabie from '../assets/imgs/users/samibabie.png'
+import Sploonathevillain from '../assets/imgs/users/sploonathevillain.png'
 
 import Home from '../assets/imgs/icons/home.svg'
 import Profile from '../assets/imgs/icons/profile.svg'
@@ -53,7 +53,7 @@ const Sidebar = () => {
                 <div className='font-b10 mb-10 sidebar-mobile-title'>Supported Creators</div>
                 <div>
                     <img src={Zyrlspn} alt="" />
-                    <img src={Marinaho} className="ml-10" alt="" />
+                    <img src={Rowanberri} className="ml-10" alt="" />
                     <img src={Rexsdev123} className="ml-10" alt="" />
                     <img src={Sploonathevillain} className="ml-10" alt="" />
                 </div>
