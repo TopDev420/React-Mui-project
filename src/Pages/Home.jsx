@@ -80,7 +80,7 @@ const Home = () => {
                 <img src={Rowanberri} alt=""></img>
                 <div>
                   <div className="header-top">
-                    <span className="header-name mr-5">rowanberri </span>
+                    <span className="header-name mr-5">rowanberri</span>
                     <span className="">created a post</span>
                   </div>
                   <div className="header-bottom">23 minutes ago</div>

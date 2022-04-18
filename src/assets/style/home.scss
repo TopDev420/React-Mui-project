@@ -127,7 +127,7 @@
           left: 100px;
         }
         @media only screen and (max-width: 767px) {
-          left: 40px;
+          left: 13px !important;
         }
         @media only screen and (max-width: 400px) {
           left: -8px;
@@ -403,122 +403,121 @@
         line-height: 22px !important;
       }
     }
+  }
 
-    .card {
-      margin-bottom: 30px !important;
-      .card-header {
-        margin: 10px 0 15px !important;
+  .card {
+    margin-bottom: 30px !important;
+    .card-header {
+      margin: 10px 0 15px !important;
 
-        & > img {
-          width: 36px;
-          height: 36px;
-        }
-        .header-top {
-          font-size: 14px !important;
-          line-height: 17px !important;
-
-          .header-bottom {
-            font-size: 10px !important;
-            line-height: 12px !important;
-          }
-        }
+      & > img {
+        width: 36px !important;
+        height: 36px !important;
       }
-
-      .card-body {
-        & > img {
-          margin-bottom: 15px !important;
-        }
-        .card-title {
-          font-size: 14px;
-          line-height: 17px;
-          margin-left: 20px !important;
-        }
-        .card-text {
-          font-size: 12px;
-          line-height: 141.52%;
-          margin: 0 20px 37px !important;
-        }
+      .header-top {
+        font-size: 14px !important;
+        line-height: 17px !important;
       }
+      .header-bottom {
+        font-size: 10px !important;
+        line-height: 12px !important;
+      }
+    }
 
-      .card-footer {
-        .card-title {
-          font-size: 14px !important;
-          line-height: 17px !important;
-          margin: 20px 20px 6px !important;
+    .card-body {
+      & > img {
+        margin-bottom: 15px !important;
+      }
+      .card-title {
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 20px !important;
+      }
+      .card-text {
+        font-size: 12px;
+        line-height: 141.52%;
+        margin: 0 20px 37px !important;
+      }
+    }
+
+    .card-footer {
+      .card-title {
+        font-size: 14px !important;
+        line-height: 17px !important;
+        margin: 20px 20px 6px !important;
+      }
+      .card-text {
+        font-size: 12px !important;
+        line-height: 141.52% !important;
+        margin: 0 20px 35px !important;
+      }
+      .card-link {
+        height: 63px;
+        background: #2a2a2a;
+        border: 1px solid #333333;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 30px 25px 0;
+        display: flex;
+        align-items: center;
+
+        .link-icon {
+          width: 40px;
+          height: 40px;
+          margin-left: 20px;
+          margin-right: 20px;
+          color: #959290;
         }
-        .card-text {
-          font-size: 12px !important;
-          line-height: 141.52% !important;
-          margin: 0 20px 35px !important;
-        }
-        .card-link {
-          height: 63px;
-          background: #2a2a2a;
-          border: 1px solid #333333;
-          box-sizing: border-box;
-          border-radius: 10px;
-          margin: 30px 25px 0;
+        .link-content {
+          border-left: solid 1px #333333;
+          height: inherit;
+          padding-left: 10px;
           display: flex;
-          align-items: center;
+          flex-direction: column;
+          justify-content: center;
 
-          .link-icon {
-            width: 40px;
-            height: 40px;
-            margin-left: 20px;
-            margin-right: 20px;
+          .link-top {
+            font-family: "InterBold";
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+          }
+          .link-bottom {
+            font-family: "InterRegular";
+            font-size: 14px;
+            line-height: 20px;
             color: #959290;
           }
-          .link-content {
-            border-left: solid 1px #333333;
-            height: inherit;
-            padding-left: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        }
+      }
+      .card-favor {
+        margin: 20px !important;
+      }
+      .card-line {
+        margin: 0 20px 8px !important;
+      }
+      .chat-container {
+        padding: 7px 20px !important;
 
-            .link-top {
-              font-family: "InterBold";
-              font-size: 16px;
-              line-height: 19px;
-              color: #ffffff;
-            }
-            .link-bottom {
-              font-family: "InterRegular";
-              font-size: 14px;
-              line-height: 20px;
-              color: #959290;
-            }
-          }
+        & > img {
+          width: 30px !important;
+          height: 30px !important;
+          margin-right: 10px !important;
         }
-        .card-favor {
-          margin: 20px !important;
-        }
-        .card-line {
-          margin: 0 20px 8px !important;
-        }
-        .chat-container {
-          padding: 7px 20px !important;
-
-          & > img {
-            width: 30px !important;
+        .chat-content {
+          .post-comment {
             height: 30px !important;
-            margin-right: 10px !important;
+            padding: 0 5px 0 10px !important;
+            font-size: 12px !important;
+            line-height: 141.52% !important;
           }
-          .chat-content {
-            .post-comment {
-              height: 30px !important;
-              padding: 0 5px 0 10px !important;
-              font-size: 12px;
-              line-height: 141.52%;
-            }
-            .chat-title {
-              font-size: 12px !important;
-              line-height: 15px !important;
-            }
-            .chat-text {
-              font-size: 12px;
-              line-height: 141.52%;
-            }
+          .chat-title {
+            font-size: 12px !important;
+            line-height: 15px !important;
+          }
+          .chat-text {
+            font-size: 12px !important;
+            line-height: 141.52% !important;
           }
         }
       }

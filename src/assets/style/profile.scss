@@ -13,11 +13,6 @@
       @media only screen and (max-width: 992px) {
         padding: 0 5vw;
       }
-      @media only screen and (max-width: 767px) {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-      }
 
       .pro-header-top-left {
         height: 86px;
@@ -41,9 +36,6 @@
           flex-direction: column;
           justify-content: center;
           width: 100%;
-          @media only screen and (max-width: 415px) {
-            margin-left: 150px;
-          }
         }
       }
       .pro-header-top-right {
@@ -71,21 +63,12 @@
     .profile-header-bottom {
       padding: 0 118px;
       margin-top: 56px;
-      @media only screen and (max-width: 767px) {
-        padding: 0 10vw;
-      }
-      @media only screen and (max-width: 415px) {
-        padding: 0 5vw;
-      }
 
       .nav-tabs {
         border-color: #2a2a2a;
         .nav-item {
           margin-right: 30px;
           background: linear-gradient(270deg, #7b31e4 0%, #3368f7 100%);
-          @media only screen and (max-width: 415px) {
-            margin-right: 20px;
-          }
         }
         .nav-link {
           font-family: "InterRegular";
@@ -107,6 +90,7 @@
   }
   .profile-body {
     --bs-gutter-x: 0rem;
+    padding: 0 20px;
 
     .profile-body-left {
       display: flex;
@@ -118,6 +102,10 @@
         display: flex;
         flex-direction: column;
 
+        .pro-mobile-container {
+          display: none;
+        }
+
         .pro-sidebar-container {
           background: #1d1d1d;
           border-radius: 20px;
@@ -125,7 +113,7 @@
           margin-bottom: 20px;
           display: flex;
           flex-direction: column;
-          border-bottom: solid 1px #2a2a2a;
+          // border-bottom: solid 1px #2a2a2a;
           color: #959290;
 
           .pro-sidebar-logo {
@@ -187,19 +175,16 @@
       @media only screen and (max-width: 900px) {
         align-items: center;
       }
-      @media only screen and (max-width: 767px) {
-        margin-top: 50px;
-      }
 
       .card {
         .card-body {
           position: relative;
-          .card-body-img {
-            background-image: url(../imgs/blurry1.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 100%;
-          }
+          // .card-body-img {
+          //   background-image: url(../imgs/blurry1.png);
+          //   background-size: contain;
+          //   background-repeat: no-repeat;
+          //   height: 100%;
+          // }
           .card-img-modal {
             position: absolute;
             width: 90%;
@@ -256,6 +241,146 @@
             border-radius: 10px;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #profile {
+    .profile-header {
+      .profile-header-top {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 !important;
+
+        .pro-header-top-left {
+          flex-direction: column;
+          justify-content: end;
+
+          img {
+            width: 106px !important;
+            height: 106px !important;
+            border: solid 5px #121212 !important;
+          }
+          & > div:first-child {
+            position: absolute;
+            top: 45px;
+            margin-left: -106px;
+          }
+          & > div:last-child {
+            margin-left: 0px !important;
+            align-items: center !important;
+
+            span:first-child {
+              font-size: 16px !important;
+              line-height: 19px !important;
+            }
+            span:last-child {
+              font-size: 10px !important;
+              line-height: 12px !important;
+            }
+          }
+        }
+        .pro-header-top-right {
+          padding-top: 10px;
+        }
+      }
+      .profile-header-bottom {
+        padding: 0 20px !important;
+        margin-top: 0px !important;
+
+        .nav-tabs {
+          .nav-item {
+            margin-right: 20px !important;
+          }
+          .nav-link {
+            font-size: 14px;
+            line-height: 17px;
+            padding: 10px 0px;
+          }
+          .nav-link.active {
+            margin-bottom: 3px;
+            padding: 10px 0 7px;
+          }
+        }
+      }
+    }
+
+    .profile-body-left {
+      margin-top: 30px !important;
+
+      .profile-sidebar {
+        width: 100% !important;
+        max-width: 350px !important;
+
+        .pro-sidebar-container {
+          display: none !important;
+        }
+
+        .pro-mobile-container {
+          background: #1d1d1d;
+          border-radius: 20px;
+          // margin-bottom: 20px;
+          display: flex !important;
+          flex-direction: column;
+          color: #959290;
+
+          .pro-mobile-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #2a2a2a;
+            padding: 20px;
+
+            & > div:first-child {
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 18px;
+                height: 18px;
+                padding: 3px 2px;
+                background: #232323;
+                border: 1px solid #2a2a2a;
+                border-radius: 5px;
+                margin-right: 5px;
+              }
+            }
+          }
+          .pro-mobile-about {
+            padding: 20px 20px 27px;
+            border-bottom: 1px solid #2a2a2a;
+
+            & a {
+              margin-right: 10px;
+            }
+          }
+          .pro-mobile-items {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px 20px;
+
+            .pro-mobile-item {
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+              align-items: center;
+              height: 21px;
+              background: #121212;
+              border: 1px solid #535353;
+              border-radius: 100px;
+              padding: 3px 9px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    .profile-body-right {
+      margin-bottom: 0px !important;
+      .popuptext {
+        display: none !important;
       }
     }
   }

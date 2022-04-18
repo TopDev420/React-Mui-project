@@ -33,7 +33,7 @@ const Sidebar = () => {
                 <div className="creater-item"><img src={Marinaho} alt="" /><span>marinaho</span></div>
                 <div className="creater-more"><MdOutlineExpandMore /><span>More</span></div>
             </div>
-            <div className="sidebar-container">
+            <div className="sidebar-container border-bottom-0">
                 <div className="sidebar-title">Recommendations</div>
                 <div className='sidebar-card'>
                     <div>

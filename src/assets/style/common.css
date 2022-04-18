@@ -92,6 +92,11 @@
 }
 
 /** regular*/
+.font-r10 {
+  font-family: "InterRegular";
+  font-size: 10px;
+  line-height: 12px;
+}
 .font-r12 {
   font-family: "InterRegular";
   font-size: 12px;
