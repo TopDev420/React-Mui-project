@@ -1,4 +1,4 @@
-#nav {
+.nav {
   color: white;
   height: 90px;
   background-color: #121212;
@@ -17,14 +17,14 @@
       display: flex;
       align-items: center;
 
-      #nav-logo {
+      .nav-logo {
         width: 36px;
         height: 36px;
         background: #232323;
         border-radius: 10px;
         padding: 7.5px 6px;
       }
-      #nav-search {
+      .nav-search {
         width: 225px;
         height: 36px;
         background: #232323;
@@ -34,7 +34,7 @@
         align-items: center;
         margin-left: 20px;
 
-        #navbar-search {
+        .navbar-search {
           background-color: transparent;
           border: none;
           padding: 0;
@@ -46,7 +46,7 @@
           color: #535353;
           width: 99%;
         }
-        #navbar-search::placeholder {
+        .navbar-search::placeholder {
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -63,7 +63,7 @@
       .nav-right-item {
         margin-left: 20px;
       }
-      #user {
+      .user {
         display: initial;
         padding: 0;
         img {
@@ -71,7 +71,7 @@
           height: 44px;
         }
       }
-      #menuIcon {
+      .menu-icon {
         width: 16px;
         height: 15px;
         flex-direction: column;
@@ -89,7 +89,7 @@
       }
     }
   }
-  #navSide {
+  .nav-side {
     top: 0;
     right: 0;
     height: 100vh;
@@ -132,7 +132,7 @@
           }
         }
       }
-      #navLogOutBtn {
+      .nav-logout-btn {
         width: 227px;
         height: 40px;
         margin: auto;
@@ -143,25 +143,25 @@
 }
 
 @media only screen and (max-width: 767px) {
-  #nav {
+  .nav {
     height: 58px !important ;
 
-    #nav-logo {
+    .nav-logo {
       width: 24px !important;
       height: 24px !important;
       padding: 5px 4px !important;
       border-radius: 5px !important;
     }
-    #nav-search {
+    .nav-search {
       display: none !important;
     }
-    #menuIcon {
+    .menu-icon {
       display: flex !important;
     }
-    #navCreateBtn {
+    .nav-create-btn {
       display: none !important;
     }
-    #user {
+    .user {
       img {
         width: 24px !important;
         height: 24px !important;

@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 
-import Navbars from './components/Navbar';
+import Navbars from './components/navbar';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 
